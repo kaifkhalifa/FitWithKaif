@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Virtual Business Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .profileinfo {
+      margin-left: 20px; /* Adjust the value to move the content to the right */
+    }
+    .bio {
+      margin-top: 5px; /* Adjust the value to align the bio with the name and title */
+    }
+    .additional-card {
+      display: none;
+      position: relative;
+      width: 500px;
+      min-height: 100px;
+      padding: 20px;
+      border-radius: 3px;
+      background-color: white;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+      margin-top: 10px;
+    }
+    .additional-card p {
+      margin: 0;
+      padding-top: 10px;
+      color: #5A5A5A;
+      line-height: 1.2;
+      font-style: initial;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <div class="card">
+    <div class="firstinfo">
+      <img src="Kaif.jpeg" alt="Profile Picture">
+      <div class="profileinfo">
+        <h1>Kaif Khalifa</h1>
+        <h3>Personal Trainer</h3>
+        <p class="bio">I am a certified personal trainer with extensive experience in helping clients achieve their fitness goals. I am passionate about guiding individuals towards success through customized workouts and expert coaching.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badgescard">
+    <span class="fas fa-certificate" onclick="showCard('certification')"></span>
+    <span class="fas fa-envelope" onclick="showCard('email')"></span>
+    <span class="fab fa-instagram" onclick="showCard('instagram')"></span>
+  </div>
+  <div class="additional-card" id="certification-card">
+    <h2>Certification</h2>
+  </p>CPR Certified</p>
+    </p>AED Certified</p>
+    </p>UMB Nutrition Coaching Certification</p>
+    </p>Lifetime Academy Training</p>
+    </p>
+    <p><a href="https://credentials.acefitness.org/22cdf167-bf72-48f2-8c6e-fd047ca0596e">American Counsil on Exercise (ACE) Certification</a></p>
+  </div>
+  <div class="additional-card" id="email-card">
+    <h2>Email</h2>
+    <p><a href="mailto:mkhalifa@lt.life">MKhalifa@lt.life</a></p>
+  </div>
+  <div class="additional-card" id="instagram-card">
+    <h2>Instagram</h2>
+    <p><a href="https://www.instagram.com/kaif.khalifa">Visit @kaif.khalifa on Instagram</a></p>
+  </div>
+</div>
+<script src="./script.js"></script>
+<script>
+  function showCard(cardId) {
+    const card = document.getElementById(cardId + '-card');
+    if (card) {
+      card.style.display = 'block';
+      animateCard(card);
+    }
+  }
+
+  function animateCard(card) {
+    card.style.animation = 'animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards';
+  }
+</script>
+</body>
+</html>
