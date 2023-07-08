@@ -28,8 +28,8 @@ body {
 }
 
 .card {
-  width: 500px;
-  min-height: 100px;
+  width: 650px;
+  min-height: 350px;
   padding: 20px;
   border-radius: 3px;
   background-color: white;
@@ -40,9 +40,9 @@ body {
 .card:after {
   content: "";
   display: block;
-  width: 190px;
-  height: 285px;
-  background: rgb(37, 38, 40);
+  width: 195px;
+  height: 255px;
+  background: rgb(6, 6, 6);
   position: absolute;
   animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
 }
@@ -51,7 +51,7 @@ body {
   padding: 10px 20px;
   border-radius: 3px;
   background-color: #ECECEC;
-  width: 480px;
+  width: 625px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   z-index: -1;
