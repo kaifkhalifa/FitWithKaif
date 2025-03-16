@@ -1,86 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Virtual Business Card</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    .profileinfo {
-      margin-left: 20px; /* Adjust the value to move the content to the right */
-    }
-    .bio {
-      margin-top: 5px; /* Adjust the value to align the bio with the name and title */
-    }
-    .additional-card {
-      display: none;
-      position: relative;
-      width: 650px;
-      min-height: 100px;
-      padding: 20px;
-      border-radius: 3px;
-      background-color: white;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-      animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
-      margin-top: 10px;
-    }
-    .additional-card p {
-      margin: 0;
-      padding-top: 10px;
-      color: #5A5A5A;
-      line-height: 1.2;
-      font-style: initial;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaif Khalifa | Personal Trainer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="content">
-  <div class="card">
-    <div class="firstinfo">
-      <img src="Kaif.jpeg" alt="Profile Picture">
-      <div class="profileinfo">
-        <h1>Kaif Khalifa</h1>
-        <h3>Personal Trainer</h3>
-        <p class="bio">I am a certified personal trainer with extensive experience in helping clients achieve their fitness goals. I am passionate about guiding individuals towards success through customized workouts and expert coaching.</p>
-      </div>
-    </div>
-  </div>
-  <div class="badgescard">
-    <span class="fas fa-certificate" onclick="showCard('certification')"></span>
-    <span class="fas fa-envelope" onclick="showCard('email')"></span>
-    <span class="fab fa-instagram" onclick="showCard('instagram')"></span>
-  </div>
-  <div class="additional-card" id="certification-card">
-    <h2>Certification</h2>
-  </p>CPR Certified</p>
-    </p>AED Certified</p>
-    </p>UMB Nutrition Coaching Certification</p>
-    </p>Lifetime Academy Training</p>
-    </p>
-    <p><a href="https://credentials.acefitness.org/22cdf167-bf72-48f2-8c6e-fd047ca0596e">American Counsil on Exercise (ACE) Certification</a></p>
-  </div>
-  <div class="additional-card" id="email-card">
-    <h2>Email</h2>
-    <p><a href="mailto:mkhalifa@lt.life">MKhalifa@lt.life</a></p>
-  </div>
-  <div class="additional-card" id="instagram-card">
-    <h2>Instagram</h2>
-    <p><a href="https://www.instagram.com/kaif.khalifa">Visit @kaif.khalifa on Instagram</a></p>
-  </div>
-</div>
-<script src="./script.js"></script>
-<script>
-  function showCard(cardId) {
-    const card = document.getElementById(cardId + '-card');
-    if (card) {
-      card.style.display = 'block';
-      animateCard(card);
-    }
-  }
+    <div class="content">
+        <div class="card">
+            <div class="firstinfo">
+                <img src="Kaif.jpeg" alt="Kaif Khalifa - Personal Trainer">
+                <div class="profileinfo">
+                    <h1>Kaif Khalifa</h1>
+                    <h3>Elite Personal Trainer</h3>
+                    <p class="bio">Dedicated to transforming lives through personalized fitness coaching. With ACE certification and extensive experience, I specialize in creating custom workout programs that align with your unique goals. Let's work together to unlock your full potential.</p>
+                </div>
+            </div>
+            <div class="badgescard">
+                <span class="fas fa-medal" onclick="showCard('certification')" title="Certifications"></span>
+                <span class="fas fa-envelope" onclick="showCard('email')" title="Contact Me"></span>
+                <span class="fab fa-instagram" onclick="showCard('instagram')" title="Follow on Instagram"></span>
+                <span class="fas fa-dumbbell" onclick="showCard('specialties')" title="Specialties"></span>
+            </div>
+        </div>
 
-  function animateCard(card) {
-    card.style.animation = 'animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards';
-  }
-</script>
+        <div class="additional-card" id="certification-card">
+            <h2>Professional Certifications</h2>
+            <p><i class="fas fa-award"></i> ACE Certified Personal Trainer</p>
+            <p><i class="fas fa-heart"></i> CPR/AED Certified</p>
+            <p><i class="fas fa-apple-alt"></i> UMB Nutrition Coaching Certification</p>
+            <p><i class="fas fa-graduation-cap"></i> Lifetime Academy Advanced Training</p>
+            <p><a href="https://credentials.acefitness.org/22cdf167-bf72-48f2-8c6e-fd047ca0596e" target="_blank">View ACE Certification <i class="fas fa-external-link-alt"></i></a></p>
+        </div>
+
+        <div class="additional-card" id="email-card">
+            <h2>Let's Connect</h2>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:mkhalifa@lt.life">MKhalifa@lt.life</a></p>
+            <p><i class="fas fa-phone"></i> Schedule a free consultation</p>
+        </div>
+
+        <div class="additional-card" id="instagram-card">
+            <h2>Follow My Journey</h2>
+            <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/kaif.khalifa" target="_blank">@kaif.khalifa</a></p>
+            <p>Daily workout tips, transformation stories, and fitness motivation</p>
+        </div>
+
+        <div class="additional-card" id="specialties-card">
+            <h2>Areas of Expertise</h2>
+            <p><i class="fas fa-running"></i> High-Intensity Interval Training (HIIT)</p>
+            <p><i class="fas fa-weight"></i> Strength & Conditioning</p>
+            <p><i class="fas fa-apple-alt"></i> Nutrition Planning</p>
+            <p><i class="fas fa-heart"></i> Weight Management</p>
+            <p><i class="fas fa-users"></i> Group Fitness Training</p>
+        </div>
+    </div>
+
+    <script>
+    function showCard(cardId) {
+        // Hide all cards first
+        document.querySelectorAll('.additional-card').forEach(card => {
+            card.classList.remove('visible');
+        });
+        
+        // Show selected card
+        const card = document.getElementById(cardId + '-card');
+        if (card) {
+            card.classList.add('visible');
+        }
+    }
+    </script>
 </body>
 </html>
